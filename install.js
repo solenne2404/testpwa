@@ -9,10 +9,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Stash the event so it can be triggered later.
     deferredInstallPrompt = e;
 
-    installButton.removeAttribute('hidden');
+    
 
     installButton.addEventListener('click', (e) => {
-        installButton.style.display = none;
+        
         deferredInstallPrompt.prompt();
 
         deferredInstallPrompt.userChoice
