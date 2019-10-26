@@ -25,7 +25,6 @@
   <meta name="theme-color" content="#e8e8e8" />
 
   <title>Radio Béton</title>
-
 </head>
 
 <body>
@@ -55,13 +54,13 @@
           <a href="#" aria-label="Quitter"></a>
           <p class="exit">exit</p>
           </a>
-
         </div>
       </div>
     </div>
   </nav>
       <!--Page-->
   <div class="page">
+
     <header>
       <div id="main">
         <span id="menuhambuger" class="menuhamburger" onclick="openNav()">&#9776;</span>
@@ -74,15 +73,17 @@
         <audio id="audioPlayer">
           <source src="https://stream.radiobeton.com:8001/stream.mp3">
         </audio>
-      
         <img src="img/Abbey_Music2.png" class="disc" id="disc" alt="image disque qui tourne">
         <span class ="control" id="modelec" ><i class="fa fa-play" id="icon"></i></span>
       </div>
     </main>
-    <footer>
 
-      <button class="install" id="butInstall" aria-label="Install" hidden>Installer un lien</button> 
+    <footer>
+        <section id="installBanner" class="banner">
+          <button class="install" id="butInstall" aria-label="Install" hidden>Installer un lien</button> 
+        </section>
     </footer>
+
 </div>
   <script src="script.js"></script>
   <script src="main.js"></script>

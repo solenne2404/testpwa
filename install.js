@@ -12,17 +12,23 @@ window.addEventListener('beforeinstallprompt', (e) => {
     installButton.removeAttribute('hidden');
 
     installButton.addEventListener('click', (e) => {
-        installButton.setAttribute('hidden', true);
+        installButton.style.display = none;
         deferredInstallPrompt.prompt();
 
         deferredInstallPrompt.userChoice
             .then((choice) => {
                 if (choice.outcome === 'accepted') {
-                    console.log('User accepted the A2HS prompt', choice);
+                    console.log('User accepted RadioBeton prompt', choice);
                 } else {
-                    console.log('User dismissed the A2HS prompt', choice);
+                    console.log('User dismissed the RadioBeton prompt', choice);
                 }
                 deferredInstallPrompt = null;
             });
     });
+    // Update UI notify the user they can add to home screen
+    document.querySelector('#installBanner').style.display = 'flex';
+     
 });
+window.addEventListener('appinstalled', (evt) => {
+    console.log('Radio Beton installed');
+  });

@@ -7,6 +7,24 @@ body {
   height: 100%;
   }
 
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .logo {
+    margin-top: 25px;
+  }
+
+  .deconnection {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  /******************************************************
+  Navigation
+  *******************************************************/
   .menuhamburger{
     font-size:30px;
     color:#CC0000;
@@ -76,6 +94,10 @@ body {
     margin-bottom: 5px;
   }
   
+  /***********************************************
+   Image du disc
+   ***********************************************/
+
   .record {
     padding: 22px 0 0 0;
     display: grid;
@@ -90,6 +112,33 @@ body {
     height: 60px;
   }
 
+  .disc {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 250px;
+  }
+
+  #modelec {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
+    justify-self: center;
+    z-index: 2;
+  }
+ 
+
+  #modelec i {
+    color: #CC0000;
+    font-size: 3em;
+  }
+
+/**************************************************************
+Bouton d'installation
+***************************************************************/
   .install {
     background: none;
     border: none;
@@ -104,51 +153,17 @@ body {
     letter-spacing: 2px;
     color: rgb(27, 25, 25);
   }
-
-  .disc {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    /* transform: rotate(25deg);
-    transition: all 1.0s;  */
-    height: 250px;
-  }
   
-  /* .disc:hover {
-    transform: rotate(2520deg);
-    transition: all 33s ease;
-  } */
-
-  .logo {
-    margin-top: 25px;
+  .banner {
+    align-content: center;
+    display: none;
+    justify-content: center;
+    width: 100%;
   }
-
-  #modelec {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    align-self: center;
-    justify-self: center;
-    z-index: 2;
-  }
-  .page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-
-  #modelec i {
-    color: #CC0000;
-    font-size: 3em;
-  }
-
-  .deconnection {
-    font-size: 2rem;
-    font-weight: bold;
-  }
+/***************************************************************************
+Sur grand ecran
+****************************************************************************/
+ 
 
   @media  all and (min-width: 1024px) {
 
