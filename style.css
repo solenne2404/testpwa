@@ -1,0 +1,190 @@
+body {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.45), 
+    rgba(204, 0, 0, 0.308)
+    ),url(img/affiche.jpg);
+  background-attachment: fixed;
+  height: 100%;
+  }
+
+  .menuhamburger{
+    font-size:30px;
+    color:#CC0000;
+    cursor:pointer;
+  }
+
+  .left-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #CC0000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
+    box-shadow: inset 7px 8px 30px -7px rgba(0,0,0,0.75), 16px 13px 30px -7px rgba(0,0,0,0.75);
+  }
+  
+  .left-nav a {
+    padding: 8px 8px 8px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .left-nav a:hover, .offcanvas a:focus{
+      color: #f1f1f1;
+  }
+  
+  .left-nav .closebtn {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    font-size: 36px;
+    margin-left: 20px;
+    color: #fff;
+  }
+  
+  .left-nav p {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    text-align: center;
+    color: rgb(255, 107, 107);
+  }
+
+  .left-nav span {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    margin-bottom:5px;
+    text-align: center;
+    font-size: 3em; 
+    color:rgb(255, 107, 107);
+  }
+
+  .left-nav img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .record {
+    padding: 22px 0 0 0;
+    display: grid;
+    grid-template-columns: 40px  auto  40px;
+    grid-template-rows: 25px auto 25px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+  }
+
+  .install {
+    background: none;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(27, 25, 25);
+  }
+
+  .disc {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    /* transform: rotate(25deg);
+    transition: all 1.0s;  */
+    height: 250px;
+  }
+  
+  /* .disc:hover {
+    transform: rotate(2520deg);
+    transition: all 33s ease;
+  } */
+
+  .logo {
+    margin-top: 25px;
+  }
+
+  #modelec {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
+    justify-self: center;
+    z-index: 2;
+  }
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  #modelec i {
+    color: #CC0000;
+    font-size: 3em;
+  }
+
+  .deconnection {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  @media  all and (min-width: 1024px) {
+
+    .left-nav {
+      overflow-x: visible;
+      width: 300px;
+    }
+
+    .left-nav .closebtn, .exit, .menuhamburger{
+      visibility: hidden;
+    }
+
+    .left-nav a {
+      margin: 60px;
+    }
+
+    .page {
+      margin-left: 300px;
+      margin-top: 20px;
+      height: 100vh;
+    }
+
+    .install , .left-nav p {
+      font-size: 1.5em;
+    }
+
+    .disc {
+      height: 360px;
+    }
+
+    #modelec i {
+      font-size: 7em;
+    }
+  
+    .logo img {
+      height: 170px;
+    }
+  }
+  
