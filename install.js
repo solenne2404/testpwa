@@ -9,8 +9,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Stash the event so it can be triggered later.
     deferredInstallPrompt = e;
 
-    
-
     installButton.addEventListener('click', (e) => {
         
         deferredInstallPrompt.prompt();
@@ -26,9 +24,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
             });
     });
     // Update UI notify the user they can add to home screen
-    document.querySelector('#installBanner').style.display = 'flex';
-     
+    document.querySelector('#installBanner').style.display = 'flex';  
 });
 window.addEventListener('appinstalled', (evt) => {
     console.log('Radio Beton installed');
-  });
+});
