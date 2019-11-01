@@ -34,7 +34,7 @@
         "sizes": "512x512",
         "type": "img/png"
       }],
-    "start_url": "index.html",
+    "start_url": "index1.html",
     "description": "RADIO BETON sur le WEB",
     "display": "standalone",
     "orientation": "portrait-primary"
