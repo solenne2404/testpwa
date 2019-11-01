@@ -112,13 +112,6 @@ body {
     height: 60px;
   }
 
-  .disc {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    height: 250px;
-  }
 
   #modelec {
     grid-column-start: 2;
@@ -136,6 +129,32 @@ body {
     font-size: 3em;
   }
 
+  @-webkit-keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .disc {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 250px;
+
+  }
 /**************************************************************
 Bouton d'installation
 ***************************************************************/

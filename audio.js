@@ -1,33 +1,25 @@
-var player = document.querySelector('#audioPlayer');
 var disc = document.getElementById('disc');
+var player = document.getElementById('audioPlayer')
+var bouton =  document.getElementById('modelec');
 
-function play(idPlayer, control) {
-    var player = document.querySelector('#' + idPlayer);
-    var bouton =  document.getElementById('modelec');
-    console.log(bouton)
+bouton.addEventListener('click', play)
+disc.addEventListener('click', play);
 
-
-    if (player.paused) {
+ function play(){
+    if(player.paused) {
         player.load();
         player.play();
         bouton.innerHTML = '<i class="fa fa-pause" id="icon"></i>';
-        console.log('lecture')
-        console.log(bouton)
-        disc.style.transform = "rotate(2520deg)";
-        disc.style.webkitTransform = "rotate(2520deg)";
-        disc.style.transition = "all 33s ease";
-        disc.style.webkittransition = "all 33s ease";
-    } else {
-        player.pause();	
+        disc.style.animation ="rotation 0.7s linear infinite";
+        disc.style.webkitAnimation = "rotation 0.7s linear infinite";
+        disc.style.webkitAnimationPlayState = "running";
+        disc.style.animationPlayState = "running";
+        
+
+     } else {
+        player.pause();
         bouton.innerHTML = '<i class="fa fa-play" id="icon"></i>';
-        console.log('pause')
-        console.log(bouton)
-        disc.style.transform = "rotate(0deg)";
-        disc.style.webkitTransform = "rotate(0deg)";
-        disc.style.transition = "all 0.0s";
-        disc.style.webkittransition = "all 0.0s";
+        disc.style.webkitAnimationPlayState = "paused";
+        disc.style.animationPlayState = "paused";
     }
-
-    
-}
-
+ }
