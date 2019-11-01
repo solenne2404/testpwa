@@ -10,8 +10,8 @@ disc.addEventListener('click', play);
         player.load();
         player.play();
         bouton.innerHTML = '<i class="fa fa-pause" id="icon"></i>';
-        disc.style.animation ="rotation 0.7s linear infinite";
-        disc.style.webkitAnimation = "rotation 0.7s linear infinite";
+        disc.style.animation ="rotation 3s linear infinite";
+        disc.style.webkitAnimation = "rotation 3s linear infinite";
         disc.style.webkitAnimationPlayState = "running";
         disc.style.animationPlayState = "running";
         
